@@ -1,0 +1,10 @@
+.Board {
+    width: 300;
+    height: 300;
+    background-color: black;
+}
+
+.Chess {
+    width: 100;
+    height: 100;
+}
