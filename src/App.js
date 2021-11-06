@@ -1,10 +1,9 @@
-import React from 'react';
-import { Layout} from 'antd';
-import './App.css';
-import AppMenu from './subpage/menu';
-import SubPageRouter from './subpage/subpageRouter';
-import {HashRouter as Router} from 'react-router-dom';
-
+import React from "react";
+import { Layout } from "antd";
+import "./App.css";
+import AppMenu from "./subpage/menu";
+import SubPageRouter from "./subpage/subpageRouter";
+import { HashRouter as Router } from "react-router-dom";
 
 const { Header, Content, Footer, Sider } = Layout;
 
@@ -25,24 +24,31 @@ class App extends React.Component {
         <Layout>
           <Sider
             style={{
-              overflow: 'auto',
-              height: '100vh',
-              position: 'fixed',
+              overflow: "auto",
+              height: "100vh",
+              position: "fixed",
               left: 0,
             }}
           >
-            <span style={{ color: 'white', marginLeft: '6px' }}>Kintous的Demo小站</span>
+            <span style={{ color: "white", marginLeft: "6px" }}>
+              Kintous的Demo小站
+            </span>
             <AppMenu />
           </Sider>
           <Layout className="site-layout" style={{ marginLeft: 200 }}>
-            <Header className="site-layout-background" style={{ padding: 0 }}>
-            </Header>
-            <Content style={{ margin: '24px 16px 0', overflow: 'initial' }}>
-              <div className="site-layout-background" style={{ padding: 24, width: '100%' }}>
+            <Header
+              className="site-layout-background"
+              style={{ padding: 0 }}
+            ></Header>
+            <Content style={{ margin: "24px 16px 0", overflow: "initial" }}>
+              <div
+                className="site-layout-background"
+                style={{ padding: 24, width: "100%" }}
+              >
                 <SubPageRouter />
               </div>
             </Content>
-            <Footer style={{ textAlign: 'center' }}>
+            <Footer style={{ textAlign: "center" }}>
               Kingtous的学习小站（子站）
             </Footer>
           </Layout>
@@ -51,6 +57,5 @@ class App extends React.Component {
     );
   }
 }
-
 
 export default App;
