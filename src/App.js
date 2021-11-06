@@ -1,11 +1,9 @@
 import React from 'react';
-import { Layout, Menu, Typography } from 'antd';
+import { Layout} from 'antd';
 import './App.css';
-import ContentRoute from './router';
 import AppMenu from './subpage/menu';
 import SubPageRouter from './subpage/subpageRouter';
-import AppRouter from './router';
-import { Switch, BrowserRouter as Router, Route,Routes } from 'react-router-dom';
+import {HashRouter as Router} from 'react-router-dom';
 
 
 const { Header, Content, Footer, Sider } = Layout;

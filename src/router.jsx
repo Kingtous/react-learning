@@ -1,4 +1,4 @@
-import { Switch, BrowserRouter as Router, Route,Routes } from 'react-router-dom';
+import { Switch, HashRouter as Router, Route,Routes } from 'react-router-dom';
 import Home from './App';
 import { Board } from './subpage/chess/chess';
 import { WelcomePage } from './subpage/welcome/welcome';

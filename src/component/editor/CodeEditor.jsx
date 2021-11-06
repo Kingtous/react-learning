@@ -2,6 +2,9 @@ import { Component } from "react";
 // 编辑器
 import "codemirror/lib/codemirror.js";
 import "codemirror/lib/codemirror.css";
+import 'codemirror/addon/hint/show-hint.css';
+import 'codemirror/addon/hint/show-hint.js';
+import 'codemirror/addon/hint/anyword-hint.js';
 // 代码包
 import "codemirror/theme/monokai.css";
 import "codemirror/mode/jsx/jsx.js";
