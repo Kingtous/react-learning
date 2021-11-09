@@ -1,7 +1,7 @@
 import { Divider,Typography } from "antd";
 import { Component } from "react";
 import styled from "styled-components";
-import CodeEditor from "../../component/editor/CodeEditor";
+import CodeEditor from "@/component/editor/CodeEditor";
 import { Board } from "./chess";
 import reactElementToJSXString from 'react-element-to-jsx-string';
 

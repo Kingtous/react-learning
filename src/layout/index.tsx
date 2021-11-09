@@ -1,13 +1,13 @@
-import React from "react";
-import { Layout } from "antd";
-import "./App.css";
-import AppMenu from "./subpage/menu";
-import SubPageRouter from "./subpage/subpageRouter";
-import { HashRouter as Router } from "react-router-dom";
+import React from 'react';
+import styles from './index.less';
 
+import { Layout } from "antd";
+import "./index.less";
+import AppMenu from '@/component/menu/menu';
+import {} from 'umi';
 const { Header, Content, Footer, Sider } = Layout;
 
-class App extends React.Component {
+export default class IndexPage extends React.Component {
   state = {
     collapsed: false,
   };
@@ -20,7 +20,7 @@ class App extends React.Component {
 
   render() {
     return (
-      <Router>
+      // <Router>
         <Layout>
           <Sider
             style={{
@@ -45,7 +45,7 @@ class App extends React.Component {
                 className="site-layout-background"
                 style={{ padding: 24, width: "100%" }}
               >
-                <SubPageRouter />
+                {this.props.children}
               </div>
             </Content>
             <Footer style={{ textAlign: "center" }}>
@@ -53,9 +53,7 @@ class App extends React.Component {
             </Footer>
           </Layout>
         </Layout>
-      </Router>
+      // </Router>
     );
   }
 }
-
-export default App;

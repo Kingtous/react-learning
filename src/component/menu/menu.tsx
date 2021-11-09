@@ -3,11 +3,12 @@ import {
     UserOutlined,
     HomeOutlined,
   } from '@ant-design/icons';
-import {Link,useLocation} from 'react-router-dom';
+import {Link} from 'umi';
 import SubMenu from 'antd/lib/menu/SubMenu';
+import {withRouter,Location,useLocation} from 'umi';
 
 
-function genMenuItem(key,to,icon,txt){
+function genMenuItem(key : string,to:string,icon:React.ReactElement | null,txt:string){
     return (
         <Menu.Item key={key} icon={icon}>
             <Link to={to} > {txt}</Link>
@@ -15,11 +16,9 @@ function genMenuItem(key,to,icon,txt){
     );
 }
 
-function MenuList(props) {
-    const p = useLocation();
-    console.log(p);
+function MenuList(props: any) {
     return (
-        <Menu theme="dark" mode="inline" selectedKeys={[p.pathname]} defaultOpenKeys={['demo-react']}>
+        <Menu theme="dark" mode="inline" selectedKeys={[props.location.pathname]} defaultOpenKeys={['demo-react']}>
             {genMenuItem('/','/',<UserOutlined />,'欢迎')}
             <SubMenu key="demo-react" icon={<UserOutlined />} title="React Demos" >
             {genMenuItem('/react-demo/chess','react-demo/chess',null,'下棋小游戏')}
@@ -28,6 +27,6 @@ function MenuList(props) {
     );
 };
 
-export default MenuList;
+export default withRouter(MenuList);
 
 
