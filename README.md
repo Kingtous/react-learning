@@ -1,15 +1,5 @@
-# umi project
+## 自学的一些Demo仓库
 
-## Getting Started
+[![Deployment](https://github.com/Kingtous/react-learning/actions/workflows/deploy.yml/badge.svg)](https://github.com/Kingtous/react-learning/actions/workflows/deploy.yml)
 
-Install dependencies,
-
-```bash
-$ yarn
-```
-
-Start the dev server,
-
-```bash
-$ yarn start
-```
+除下React可能还会放一些其他项目的learning code.
