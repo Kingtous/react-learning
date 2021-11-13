@@ -21,7 +21,7 @@ export default defineConfig({
             },
             {
               path: 'lamache',
-              component: '@/pages/react-demo/lamache/index',
+              component: '@/pages/react-demo/wasm/index',
             },
           ],
         },
