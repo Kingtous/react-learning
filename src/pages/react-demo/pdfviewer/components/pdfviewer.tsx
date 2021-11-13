@@ -5,7 +5,7 @@ import style from './pdfviewer.less';
 
 const { Title, Paragraph, Text, Link } = Typography;
 
-pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.js`;
+pdfjs.GlobalWorkerOptions.workerSrc = `//cdn.bootcdn.net/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.js`;
 
 export default class PDFWindow extends React.Component {
   constructor(props: any) {
