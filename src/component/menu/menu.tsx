@@ -1,8 +1,7 @@
 import { Menu } from 'antd';
-import { UserOutlined, HomeOutlined } from '@ant-design/icons';
-import { Link } from 'umi';
+import { UserOutlined } from '@ant-design/icons';
+import { Link, withRouter } from 'umi';
 import SubMenu from 'antd/lib/menu/SubMenu';
-import { withRouter, Location, useLocation } from 'umi';
 
 function genMenuItem(
   key: string,
@@ -38,6 +37,12 @@ function MenuList(props: any) {
           '/react-demo/pdfviewer',
           null,
           'PDF',
+        )}
+        {genMenuItem(
+          '/react-demo/lamache',
+          '/react-demo/lamache',
+          null,
+          'WASM 拉马车算法',
         )}
       </SubMenu>
     </Menu>

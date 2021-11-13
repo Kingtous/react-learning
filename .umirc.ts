@@ -19,6 +19,10 @@ export default defineConfig({
               path: 'pdfviewer',
               component: '@/pages/react-demo/pdfviewer/index',
             },
+            {
+              path: 'lamache',
+              component: '@/pages/react-demo/lamache/index',
+            },
           ],
         },
       ],
